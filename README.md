@@ -3,9 +3,9 @@ Within this repository we implement a simple chatbot that can answer question ab
 
 ### Technologies used
 The chatbot is build using LangChain, in particular we uses:
-- docx2txt, to open and read the documents
+- docx, to open, read the documents and split documents
 - Faiss, to store the documents' embeddings
-- HuggingFace, for both embeddings and llm
+- Gemini API, for both embeddings and llm
 - other LangChain functionalities (text splitters, chains, etc.)
 
 ## What package do you need to run the chatbot?
@@ -13,10 +13,11 @@ The chatbot is build using LangChain, in particular we uses:
 - langchain
 - faiss-cpu
 - sentence-transformers
+- python-docx
 
 ## How to run the chatbot?
-Clone the repository, insert you HugginFace token in "rag_llm.ipynb" and run it.
+Clone the repository, insert you Google API token in "rag_llm.ipynb" and run it.
 
 ## Future
-We are going to documentthe code more accuratly.
+We are going to document the code more accuratly.
 We are realizing a dashboard (using streamlit) to interact with the chatbot easly.
